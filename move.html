@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bodyweight</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+
+</head>
+
+<body>
+
+    <!-- NAV BAR -->
+    <nav>
+        <div class="nav-wrapper grey darken-4">
+            <a href="index.html" class="brand-logo center">Bodyweight</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="left hide-on-med-and-down">
+                <li><a href="recommended.html">Recommended</a></li>
+                <li><a href="move.html">Move</a></li>
+                <li><a href="minimalist.html">Minimalist</a></li>
+                <li><a href="skillday.html">Skill Day</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li>
+            <div class="user-view">
+                <div class="background">
+
+                </div>
+            </div>
+        </li>
+        <li><a class="subheader">Routines</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a href="recommended.html">Recommended</a></li>
+        <li><a href="move.html">Move</a></li>
+        <li><a href="minimalist.html">Minimalist</a></li>
+        <li><a href="skillday.html">Skill Day</a></li>
+    </ul>
+
+    <div class="container">
+        <!-- PAGE CONTENT -->
+        <h1 class="center">Move Routine</h1>
+        <!-- END PAGE CONTENT -->
+    </div>
+
+    
+
+
+
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script>
+        // Sidenav
+        const sideNav = document.querySelector('.sidenav');
+        M.Sidenav.init(sideNav, {});
+    </script>
+</body>
+
+</html>
