@@ -7,7 +7,7 @@
     <title>Bodyweight</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
-
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
@@ -47,17 +47,959 @@
     <div class="container">
         <!-- PAGE CONTENT -->
         <h1 class="center">Recommended Routine</h1>
+        <div class="center">The full Reddit /r/bodyweightfitness Recommended Routine. Do this 3 times a week (Mon/Wed/Fri).</div>
+        <br><br>
+
+        <!-- COLLAPSIBLE -->
+        <ul class="collapsible expandable z-depth-0">
+            <!-- Warm Up -->
+            <li class="active">
+                <div class="collapsible-header">
+                    <div class="flow-text">Warm Up</div>
+                </div>
+                <div class="collapsible-body">
+                    <div>
+                        <b>Instructions: </b>
+                        A few exercises and stretches to prepare your joints for Strength Work. Move from one exercise to
+                        the next with little rest in between.
+                    </div>
+                    <br><br>
+
+                    <div class="flow-text">Dynamic Stretches</div>
+                    <!-- Dynamic Stretches Table -->
+                    <table class="exercise">
+                        <thead>
+                            <tr>
+                                <th style="width:10%">Reps</th>
+                                <th>Exercise</th>
+                            </tr>
+                        </thead>
+                        <tr onclick="showVid(this)">
+                            <td>5-10</td>
+                            <td>Yuri's Shoulder Band Warmup</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/6y_AU-aGhVE"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr onclick="showVid(this)">
+                            <td>5-10</td>
+                            <td>Squat Sky Reaches</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/lbozu0DPcYI?start=42" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr onclick="showVid(this)">
+                            <td>10+</td>
+                            <td>GMB Wrist Prep</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/mSZWSQSSEjE"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr onclick="showVid(this)">
+                            <td>30s</td>
+                            <td>Deadbugs</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/I5xbsA71v1A?start=8" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+
+                            </td>
+                        </tr>
+                        <tr onclick="showVid(this)" class="tooltipped" data-position="left"
+                            data-tooltip="Add these once you can do Negative Pull-ups">
+                            <td>10</td>
+                            <td>Arch Hangs</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/C995b3KLXS4?start=7" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <br><br>
+
+                    <!-- Support Header + Button -->
+                    <div class="flow-text">Support
+                        <a class="support waves-effect waves-light btn-small modal-trigger grey darken-4"
+                            href="#supportSelect">Level 1</a></div>
+                    <p><i>Add these once you can do Negative Dips</i></p>
+
+                    <!-- Support Modal -->
+                    <div id="supportSelect" class="modal">
+                        <div class="modal-content">
+                            <h4>Support Progression</h4>
+                            <div class="collection">
+                                <a onclick="swapExercise('support','1','Parallel Bar Support', 'Zv87Teu51tQ',this), '30s'"
+                                    class="modal-close collection-item active">Level 1: Parallel Bar Support</a>
+                                <a onclick="swapExercise('support','2','Ring Support','V3IkFK5lvRw',this, '30s')"
+                                    class="modal-close collection-item">Level 2: Ring Support</a>
+                                <a onclick="swapExercise('support','3','Rings Turned Out Support','9PKChU9Ozs8',this, '30s')"
+                                    class="modal-close collection-item">Level 3: Rings Turned Out Support</a>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a onclick="return false;" class="modal-close waves-effect btn-flat">Cancel</a>
+                        </div>
+                    </div>
+
+                    <!-- Support Table -->
+                    <table class="exercise">
+                        <thead>
+                            <tr>
+                                <th style="width:10%">Reps</th>
+                                <th>Exercise</th>
+                            </tr>
+                        </thead>
+                        <tr onclick="showVid(this)">
+                            <td>30s</td>
+                            <td class="support">Parallel Bar Support</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe class="support" width="560" height="315"
+                                        src="https://www.youtube.com/embed/Zv87Teu51tQ" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <br><br>
+
+                    <!-- Simple Squat Header + Button-->
+                    <div class="flow-text">Squat
+                        <a class="simple-squat waves-effect waves-light btn-small modal-trigger grey darken-4"
+                            href="#simpleSquatSelect">Level 1</a></div>
+                    <p><i>Add these once you can do Bulgarian Split Squats</i></p>
+                    <!-- Simple Squat Modal -->
+                    <div id="simpleSquatSelect" class="modal">
+                        <div class="modal-content">
+                            <h4>Squat Progression</h4>
+                            <div class="collection">
+                                <a onclick="swapExercise('simple-squat','1','Assisted Bodyweight Squats','OuR_Fp7AB0c',this, '10')"
+                                    class="modal-close collection-item active">Level 1: Assisted Bodyweight Squats</a>
+                                <a onclick="swapExercise('simple-squat','2','Bodyweight Squats','zJBLDJMJiDE',this, '10')"
+                                    class="modal-close collection-item">Level 2: Bodyweight Squats</a>
+                                <a onclick="swapExercise('simple-squat','3','Split Squats','SGHnCftrZkA',this, '10')"
+                                    class="modal-close collection-item">Level 3: Split Squats</a>
+                                <a onclick="swapExercise('simple-squat','4','Bulgarian Split Squats','kkdmHTASZg8?start=76',this, '10')"
+                                    class="modal-close collection-item">Level 4: Bulgarian Split Squats</a>
+                                <a onclick="swapExercise('simple-squat','5','Beginner Shrimp Squats','2_tqxnPAaxM',this, '10')"
+                                    class="modal-close collection-item">Level 5: Beginner Shrimp Squats</a>
+                                <a onclick="swapExercise('simple-squat','6','Intermediate Shrimp Squats','yeos3GQNQOI',this, '10')"
+                                    class="modal-close collection-item">Level 6: Intermediate Shrimp Squats</a>
+                                <a onclick="swapExercise('simple-squat','7','Advanced Shrimp Squats','J9244Cspo1w',this, '10')"
+                                    class="modal-close collection-item">Level 7: Advanced Shrimp Squats</a>
+                                <a onclick="swapExercise('simple-squat','8','Weighted Shrimp Squats','O0JQyNmqJAA',this, '10')"
+                                    class="modal-close collection-item">Level 8: Weighted Shrimp Squats</a>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a onclick="return false;" class="modal-close waves-effect btn-flat">Cancel</a>
+                        </div>
+                    </div>
+
+                    <!-- Simple Squat Table -->
+                    <table class="exercise">
+                        <thead>
+                            <tr>
+                                <th style="width:10%">Reps</th>
+                                <th>Exercise</th>
+                            </tr>
+                        </thead>
+                        <tr onclick="showVid(this)">
+                            <td>10</td>
+                            <td class="simple-squat">Assisted Bodyweight Squats</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315" class="simple-squat"
+                                        src="https://www.youtube.com/embed/OuR_Fp7AB0c" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <br><br>
+
+                    <!-- Simple Hinge Header + Button-->
+                    <div class="flow-text">Hinge
+                        <a class="simple-hinge waves-effect waves-light btn-small modal-trigger grey darken-4"
+                            href="#simpleHingeSelect">Level 1</a></div>
+                    <p><i>Add these once you can do Banded Nordic Curls</i></p>
+                    <!-- Simple Hinge Modal -->
+                    <div id="simpleHingeSelect" class="modal">
+                        <div class="modal-content">
+                            <h4>Hinge Progression</h4>
+                            <br>
+                            <div class="collection with-header">
+                                <a onclick="swapExercise('simple-hinge','1','Romanian Deadlifts', 'Rg-FORTdUW0?start=11',this, '10')"
+                                    class="modal-close collection-item active">Level 1: Romanian Deadlifts</a>
+                                <a onclick="swapExercise('simple-hinge','2','Single Legged Deadlifts', 'FujJkRLG1Fg?start=29',this, '10')"
+                                    class="modal-close collection-item">Level 2: Single Legged Deadlifts</a>
+                                <div class="collection-header">
+                                    <h6><b>Recommended Progression</b></h6>
+                                </div>
+                                <a onclick="swapExercise('simple-hinge','3','Negative Banded Nordic Curls', '1iADPVFJF5g',this, '10')"
+                                    class="modal-close collection-item">Level 3: Negative Banded Nordic Curls</a>
+                                <a onclick="swapExercise('simple-hinge','4',' Banded Nordic Curls', 'HUXS3S2xSX4?start=4',this, '10')"
+                                    class="modal-close collection-item">Level 4: Banded Nordic Curls</a>
+                                <a onclick="swapExercise('simple-hinge','5','Nordic Curls', 'd8AAPcYxPo8?start=3',this, '10')"
+                                    class="modal-close collection-item">Level 5: Nordic Curls</a>
+                                <div class="collection-header">
+                                    <h6><b>Alternate Path 1</b></h6>
+                                </div>
+                                <a onclick="swapExercise('simple-hinge','3','Beginner Harop Curls', 'A2xRx7dGWaE',this, '10')"
+                                    class="modal-close collection-item">Level 3: Beginner Harop Curls</a>
+                                <a onclick="swapExercise('simple-hinge','4','Advanced Harop Curls', 'Y7ndeehIOhU',this, '10')"
+                                    class="modal-close collection-item">Level 4: Advanced Harop Curls</a>
+                                <div class="collection-header">
+                                    <h6><b>Alternate Path 2</b></h6>
+                                </div>
+                                <a onclick="swapExercise('simple-hinge','3','Glute Ham Raise', '8w6nkNnE3-M',this, '10')"
+                                    class="modal-close collection-item">Level 3: Glute Ham Raise</a>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a onclick="return false;" class="modal-close waves-effect btn-flat">Cancel</a>
+                        </div>
+                    </div>
+
+                    <!-- Simple Hinge Table -->
+                    <table class="exercise">
+                        <thead>
+                            <tr>
+                                <th style="width:10%">Reps</th>
+                                <th>Exercise</th>
+                            </tr>
+                        </thead>
+                        <tr onclick="showVid(this)">
+                            <td>10</td>
+                            <td class="simple-hinge">Romanian Deadlifts</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315" class="simple-hinge"
+                                        src="https://www.youtube.com/embed/Rg-FORTdUW0?start=11" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <br><br>
+                </div>
+                <br>
+            </li>
+
+            <!-- Strength Work -->
+            <li class="active">
+                <div class="collapsible-header">
+                    <div class="flow-text">Strength Work</div>
+                </div>
+                <div class="collapsible-body">
+                    <div>
+                        <b>Instructions: </b>
+                        Complete each section 3 times. If you can complete 8 reps for all 3 sets, move on to the next level.
+                    </div>
+                    <br><br>
+
+                    <!-- Pair 1: Pull-ups and Squats -->
+                    <div class="flow-text">Pair 1:
+                        Pull-ups <a class="pull waves-effect waves-light btn-small modal-trigger grey darken-4"
+                            href="#pullSelect">Level 1</a>
+                        Squats <a class="squat waves-effect waves-light btn-small modal-trigger grey darken-4"
+                            href="#squatSelect">Level 1</a>
+                    </div>
+
+                    <!-- Pull-up Modal -->
+                    <div id="pullSelect" class="modal">
+                        <div class="modal-content">
+                            <h4>Pull-up Progression</h4>
+                            <br>
+                            <div class="collection with-header">
+                                <a onclick="swapExercise('pull','1','Scapular Pulls', 'FgYoc4O-cio?start=81',this)"
+                                    class="modal-close collection-item active">Level 1: Scapular Pulls</a>
+                                <a onclick="swapExercise('pull','2','Arch Hangs', 'C995b3KLXS4?start=7',this)"
+                                    class="modal-close collection-item">Level 2: Arch Hangs</a>
+                                <a onclick="swapExercise('pull','3','Negative Pull-ups', 'eLjb-iXpxWE',this)"
+                                    class="modal-close collection-item">Level 3: Negative Pull-ups</a>
+                                <a onclick="swapExercise('pull','4','Pull-ups', 'eGo4IYlbE5g',this)"
+                                    class="modal-close collection-item">Level 4: Pull-ups</a>
+                                <div class="collection-header">
+                                    <h6><b>Weighted Progression</b></h6>
+                                </div>
+                                <a onclick="swapExercise('pull','5','Weighted Pull-ups', 'F-o7AOX5abo?start=5',this)"
+                                    class="modal-close collection-item">Level 5: Weighted Pull-ups</a>
+                                <div class="collection-header">
+                                    <h6><b>Alternate Path 1</b></h6>
+                                </div>
+                                <a onclick="swapExercise('pull','5','L-sit Pull-ups', 'quFBLtkxMRM',this)"
+                                    class="modal-close collection-item">Level 5: L-sit Pull-ups</a>
+                                <div class="collection-header">
+                                    <h6><b>Alternate Path 2</b></h6>
+                                </div>
+                                <a onclick="swapExercise('pull','5','Arch Body Pull-ups', 'eGo4IYlbE5g?start=160',this)"
+                                    class="modal-close collection-item">Level 5: Arch Body Pull-ups</a>
+                                <div class="collection-header">
+                                    <h6><b>Alternate Path 3</b></h6>
+                                </div>
+                                <a onclick="swapExercise('pull','5','Type-Writer Pull-ups', 'dvd5Fyl-Ves?start=15',this)"
+                                    class="modal-close collection-item">Level 5: Type-Writer Pull-ups</a>
+                                <a onclick="swapExercise('pull','5','Archer Pull-ups', 'vdjWgw98EeI?start=112',this)"
+                                    class="modal-close collection-item">Level 6: Archer Pull-ups</a>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a onclick="return false;" class="modal-close waves-effect btn-flat">Cancel</a>
+                        </div>
+                    </div>
+
+                    <!-- Squat Modal -->
+                    <div id="squatSelect" class="modal">
+                        <div class="modal-content">
+                            <h4>Squat Progression</h4>
+                            <div class="collection">
+                                <a onclick="swapExercise('squat','1','Assisted Bodyweight Squats','OuR_Fp7AB0c',this)"
+                                    class="modal-close collection-item active">Level 1: Assisted Bodyweight Squats</a>
+                                <a onclick="swapExercise('squat','2','Bodyweight Squats','zJBLDJMJiDE',this)"
+                                    class="modal-close collection-item">Level 2: Bodyweight Squat</a>
+                                <a onclick="swapExercise('squat','3','Split Squats','SGHnCftrZkA',this)"
+                                    class="modal-close collection-item">Level 3: Split Squats</a>
+                                <a onclick="swapExercise('squat','4','Bulgarian Split Squats','kkdmHTASZg8?start=76',this)"
+                                    class="modal-close collection-item">Level 4: Bulgarian Split Squats</a>
+                                <div class="collection-header flow-text">
+                                    <h6><b>Recommended Progression</b></h6>
+                                </div>
+                                <a onclick="swapExercise('squat','5','Beginner Shrimp Squats','2_tqxnPAaxM',this)"
+                                    class="modal-close collection-item">Level 5: Beginner Shrimp Squats</a>
+                                <a onclick="swapExercise('squat','6','Intermediate Shrimp Squats','yeos3GQNQOI',this)"
+                                    class="modal-close collection-item">Level 6: Intermediate Shrimp Squat</a>
+                                <a onclick="swapExercise('squat','7','Advanced Shrimp Squats','J9244Cspo1w',this)"
+                                    class="modal-close collection-item">Level 7: Advanced Shrimp Squats</a>
+                                <a onclick="swapExercise('squat','8','Weighted Shrimp Squats','O0JQyNmqJAA',this)"
+                                    class="modal-close collection-item">Level 8: Weighted Shrimp Squats</a>
+                                <div class="collection-header">
+                                    <h6><b>Alternate Path 1</b></h6>
+                                </div>
+                                <a onclick="swapExercise('squat','5','Step-ups','487aR3A7HvM',this)"
+                                    class="modal-close collection-item">Level 5: Step-ups</a>
+                                <a onclick="swapExercise('squat','6','Deep Step-ups','bVRLKMEKOmo',this)"
+                                    class="modal-close collection-item">Level 6: Deep Step-ups</a>
+                                <div class="collection-header">
+                                    <h6><b>Alternate Path 1</b></h6>
+                                </div>
+                                <a onclick="swapExercise('squat','5','Partial Range Pistol Squats','u0PyrQj-x84?start=17',this)"
+                                    class="modal-close collection-item">Level 5: Partial Range Pistol Squats</a>
+                                <a onclick="swapExercise('squat','6','Pistol Squats','qDcniqddTeE',this)"
+                                    class="modal-close collection-item">Level 6: Pistol Squats</a>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a onclick="return false;" class="modal-close waves-effect btn-flat">Cancel</a>
+                        </div>
+                    </div>
+
+                    <!-- Pair 1 Table -->
+                    <table class="exercise">
+                        <thead>
+                            <tr>
+                                <th style="width:10%">Reps</th>
+                                <th>Exercise</th>
+                            </tr>
+                        </thead>
+                        <tr onclick="showVid(this)">
+                            <td>5-8</td>
+                            <td class="pull">Scapular Pulls</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315" class="pull"
+                                        src="https://www.youtube.com/embed/FgYoc4O-cio?start=81" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>90s</td>
+                            <td>Rest</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>5-8</td>
+                            <td>Assisted Bodyweight Squats</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315" class="squat"
+                                        src="https://www.youtube.com/embed/OuR_Fp7AB0c" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>90s</td>
+                            <td>Rest</td>
+                        </tr>
+                    </table>
+                    <br><br>
+
+                    <!-- Pair 2: Dips and Hinge -->
+                    <div class="flow-text">Pair 2:
+                        Dips <a class="dip waves-effect waves-light btn-small modal-trigger grey darken-4"
+                            href="#dipSelect">Level 1</a>
+                        Hinge <a class="hinge waves-effect waves-light btn-small modal-trigger grey darken-4"
+                            href="#hingeSelect">Level 1</a>
+                    </div>
+
+                    <!-- Dip Modal -->
+                    <div id="dipSelect" class="modal">
+                        <div class="modal-content">
+                            <h4>Dip Progression</h4>
+                            <br>
+                            <div class="collection with-header">
+                                <a onclick="swapExercise('dip','1','Parallel Bar Support Hold', 'Zv87Teu51tQ',this, '10-60s')"
+                                    class="modal-close collection-item active">Level 1: Parallel Bar Support Hold</a>
+                                <a onclick="swapExercise('dip','2','Negative Dips', 'T3Scqw1BbCc',this)"
+                                    class="modal-close collection-item">Level 2: Negative Dips</a>
+                                <a onclick="swapExercise('dip','3','Parallel Bar Dips', '2z8JmcrW-As',this)"
+                                    class="modal-close collection-item">Level 3: Parallel Bar Dips</a>
+                                <div class="collection-header">
+                                    <h6><b>Weighted Path</b></h6>
+                                </div>
+                                <a onclick="swapExercise('dip','4','Weighted Dips', '22JPetRuHqE?start=26',this)"
+                                    class="modal-close collection-item">Level 4: Weighted Dips</a>
+                                <div class="collection-header">
+                                    <h6><b>Rings Path</b></h6>
+                                </div>
+                                <a onclick="swapExercise('dip','4','Ring Dips', 'EznLCDBAPIU',this)"
+                                    class="modal-close collection-item">Level 4: Ring Dips</a>
+                                <a onclick="swapExercise('dip','5','Rings Turned Out Dips', 'fESFVozfgOM?start=46',this)"
+                                    class="modal-close collection-item">Level 5: Rings Turned Out Dips</a>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a onclick="return false;" class="modal-close waves-effect btn-flat">Cancel</a>
+                        </div>
+                    </div>
+
+                    <!-- Hinge Modal -->
+                    <div id="hingeSelect" class="modal">
+                        <div class="modal-content">
+                            <h4>Hinge Progression</h4>
+                            <br>
+                            <div class="collection with-header">
+                                <a onclick="swapExercise('hinge','1','Romanian Deadlifts', 'Rg-FORTdUW0?start=11',this)"
+                                    class="modal-close collection-item active">Level 1: Romanian Deadlifts</a>
+                                <a onclick="swapExercise('hinge','2','Single Legged Deadlifts', 'FujJkRLG1Fg?start=29',this)"
+                                    class="modal-close collection-item">Level 2: Single Legged Deadlifts</a>
+                                <div class="collection-header">
+                                    <h6><b>Recommended Progression</b></h6>
+                                </div>
+                                <a onclick="swapExercise('hinge','3','Negative Banded Nordic Curls', '1iADPVFJF5g',this)"
+                                    class="modal-close collection-item">Level 3: Negative Banded Nordic Curls</a>
+                                <a onclick="swapExercise('hinge','4',' Banded Nordic Curls', 'HUXS3S2xSX4?start=4',this)"
+                                    class="modal-close collection-item">Level 4: Banded Nordic Curls</a>
+                                <a onclick="swapExercise('hinge','5','Nordic Curls', 'd8AAPcYxPo8?start=3',this)"
+                                    class="modal-close collection-item">Level 5: Nordic Curls</a>
+                                <div class="collection-header">
+                                    <h6><b>Alternate Path 1</b></h6>
+                                </div>
+                                <a onclick="swapExercise('hinge','3','Beginner Harop Curls', 'A2xRx7dGWaE',this)"
+                                    class="modal-close collection-item">Level 3: Beginner Harop Curls</a>
+                                <a onclick="swapExercise('hinge','4','Advanced Harop Curls', 'Y7ndeehIOhU',this)"
+                                    class="modal-close collection-item">Level 4: Advanced Harop Curls</a>
+                                <div class="collection-header">
+                                    <h6><b>Alternate Path 2</b></h6>
+                                </div>
+                                <a onclick="swapExercise('hinge','3','Glute Ham Raise', '8w6nkNnE3-M',this)"
+                                    class="modal-close collection-item">Level 3: Glute Ham Raise</a>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a onclick="return false;" class="modal-close waves-effect btn-flat">Cancel</a>
+                        </div>
+                    </div>
+
+                    <!-- Pair 2 Table -->
+                    <table class="exercise">
+                        <thead>
+                            <tr>
+                                <th style="width:10%">Reps</th>
+                                <th>Exercise</th>
+                            </tr>
+                        </thead>
+                        <tr onclick="showVid(this)">
+                            <td>10-60s</td>
+                            <td class="dip">Parallel Bar Support Hold</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315" class="dip"
+                                        src="https://www.youtube.com/embed/Zv87Teu51tQ" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>90s</td>
+                            <td>Rest</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr onclick="showVid(this)">
+                            <td>5-8</td>
+                            <td class="hinge">Romananian Deadlifts</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315" class="hinge"
+                                        src="https://www.youtube.com/embed/Rg-FORTdUW0?start=11" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>90s</td>
+                            <td>Rest</td>
+                        </tr>
+                    </table>
+                    <br><br>
+
+                    <!-- Pair 3: Rows and Push-ups -->
+                    <div class="flow-text">Pair 3:
+                        Rows <a class="rows waves-effect waves-light btn-small modal-trigger grey darken-4"
+                            href="#rowSelect">Level 1</a>
+                        Push-ups <a class="push waves-effect waves-light btn-small modal-trigger grey darken-4"
+                            href="#pushSelect">Level 1</a>
+                    </div>
+
+                    <!-- Row Modal -->
+                    <div id="rowSelect" class="modal">
+                        <div class="modal-content">
+                            <h4>Row Progression</h4>
+                            <br>
+                            <div class="collection with-header">
+                                <a onclick="swapExercise('rows','1','Vertical Rows', 'e5fdh9_kH_Y',this)"
+                                    class="modal-close collection-item active">Level 1: Vertical Rows</a>
+                                <a onclick="swapExercise('rows','2','Incline Rows', 'LR2EnFWpVao',this)"
+                                    class="modal-close collection-item">Level 2: Incline Rows</a>
+                                <a onclick="swapExercise('rows','3','Horizontal Rows', 'dvkIaarnf0g?start=12',this)"
+                                    class="modal-close collection-item">Level 3: Horizontal Rows</a>
+                                <a onclick="swapExercise('rows','4','Wide Rows', '1yMRvsuk9Xg',this)"
+                                    class="modal-close collection-item">Level 4: Wide Rows</a>
+                                <div class="collection-header">
+                                    <h6><b>Weighted Path</b></h6>
+                                </div>
+                                <a onclick="swapExercise('rows','5','Weighted Inverted Rows', '3cYR6pis5zc?start=15',this)"
+                                    class="modal-close collection-item">Level 5: Weighted Inverted Rows</a>
+                                <div class="collection-header">
+                                    <h6><b>Alternate Path 1</b></h6>
+                                </div>
+                                <a onclick="swapExercise('rows','5','Tuck Front Lever', 'tStwC06qdwM',this, '10-30s')"
+                                    class="modal-close collection-item">Level 5: Tuck Front Lever</a>
+                                <a onclick="swapExercise('rows','6','Tuck Front Lever Pulls', 'ZWxrvwRKR-s?start=259',this)"
+                                    class="modal-close collection-item">Level 6: Tuck Front Lever Pulls</a>
+                                <div class="collection-header">
+                                    <h6><b>Alternate Path 2</b></h6>
+                                </div>
+                                <a onclick="swapExercise('rows','5','Archer Rows', 'PGoW1i4K_o0',this)"
+                                    class="modal-close collection-item">Level 5: Archer Rows</a>
+                                <a onclick="swapExercise('rows','6','Archer Rows', '67Lp_DeX3-c',this)"
+                                    class="modal-close collection-item">Level 6: One Arm Rows</a>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a onclick="return false;" class="modal-close waves-effect btn-flat">Cancel</a>
+                        </div>
+                    </div>
+
+                    <!-- Push-up Modal -->
+                    <div id="pushSelect" class="modal">
+                        <div class="modal-content">
+                            <h4>Push-up Progression</h4>
+                            <br>
+                            <div class="collection with-header">
+                                <a onclick="swapExercise('push','1','Vertical Push-ups', 'g-RRQmQ4JQE',this)"
+                                    class="modal-close collection-item active">Level 1: Vertical Push-ups</a>
+                                <a onclick="swapExercise('push','2','Incline Push-ups', '4dF1DOWzf20?start=236',this)"
+                                    class="modal-close collection-item">Level 2: Incline Push-ups</a>
+                                <a onclick="swapExercise('push','3','Full Push-ups', 'IODxDxX7oi4',this)"
+                                    class="modal-close collection-item">Level 3: Full Push-ups</a>
+                                <a onclick="swapExercise('push','4','Diamond Push-ups', '_4EGPVJuqfA',this)"
+                                    class="modal-close collection-item">Level 4: Diamond Push-ups</a>
+                                <div class="collection-header">
+                                    <h6><b>Recommended Progression</b></h6>
+                                </div>
+                                <a onclick="swapExercise('push','5','Pseudo Planche Push-ups', 'Cdmg0CfMZeo',this)"
+                                    class="modal-close collection-item">Level 5: Pseudo Planche Push-ups</a>
+                                <div class="collection-header">
+                                    <h6><b>Rings Path</b></h6>
+                                </div>
+                                <a onclick="swapExercise('push','5','Rings Push-ups', 'vBviFvN3rHw',this)"
+                                    class="modal-close collection-item">Level 5: Rings Push-ups</a>
+                                <a onclick="swapExercise('push','6','Rings Turned Out Push-ups', 'MrlyEIpe0LI?start=175',this)"
+                                    class="modal-close collection-item">Level 6: Rings Turned Out Push-ups</a>
+                                <a onclick="swapExercise('push','6','Rings Turned Out PPPU', '-kwe1EOiWMY',this)"
+                                    class="modal-close collection-item">Level 7: Rings Turned Out PPPU</a>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a onclick="return false;" class="modal-close waves-effect btn-flat">Cancel</a>
+                        </div>
+                    </div>
+
+                    <!-- Pair 3 Table -->
+                    <table class="exercise">
+                        <thead>
+                            <tr>
+                                <th style="width:10%">Reps</th>
+                                <th>Exercise</th>
+                            </tr>
+                        </thead>
+                        <tr onclick="showVid(this)">
+                            <td>5-8</td>
+                            <td class="rows">Vertical Rows</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315" class="rows"
+                                        src="https://www.youtube.com/embed/e5fdh9_kH_Y" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>90s</td>
+                            <td>Rest</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr onclick="showVid(this)">
+                            <td>5-8</td>
+                            <td class="push">Vertical Push-ups</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315" class="push"
+                                        src="https://www.youtube.com/embed/g-RRQmQ4JQE" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>90s</td>
+                            <td>Rest</td>
+                        </tr>
+                    </table>
+                    <br><br>
+
+                    <!-- Core Triplet -->
+                    <div class="flow-text">Core Triplet 3: <br>
+                        Anti-Extension <a class="aext waves-effect waves-light btn-small modal-trigger grey darken-4"
+                            href="#aextSelect">Level 1</a>
+                        Anti-Rotation <a class="arot waves-effect waves-light btn-small modal-trigger grey darken-4"
+                            href="#arotSelect">Level 1</a>
+                        Extension <a class="ext waves-effect waves-light btn-small modal-trigger grey darken-4"
+                            href="#extSelect">Level 1</a>
+                    </div>
+
+                    <!-- Anti-Extension Modal -->
+                    <div id="aextSelect" class="modal">
+                        <div class="modal-content">
+                            <h4>Anti-Extension Progression</h4>
+                            <br>
+                            <div class="collection with-header">
+                                <a onclick="swapExercise('aext','1','Plank', '44ScXWFaVBs?start=10',this, '10-30s')"
+                                    class="modal-close collection-item active">Level 1: Plank</a>
+                                <div class="collection-header">
+                                    <h6><b>Recommended Progression</b></h6>
+                                </div>
+                                <a onclick="swapExercise('aext','2','Ring Ab Rollouts', 'LBUfnmugKLw',this, '8-12')"
+                                    class="modal-close collection-item">Level 2: Ring Ab Rollouts</a>
+                                <div class="collection-header">
+                                    <h6><b>Alternate Path 1</b></h6>
+                                </div>
+                                <a onclick="swapExercise('aext','2','Kneeling Ab Wheel Rollouts', 'uYBOBBv9GzY',this, '8-12')"
+                                    class="modal-close collection-item">Level 2: Kneeling Ab Wheel Rollouts</a>
+                                <a onclick="swapExercise('aext','3','Standing Ab Wheel Rollouts', 'uYBOBBv9GzY',this, '8-12')"
+                                    class="modal-close collection-item">Level 3: Standing Ab Wheel Rollouts</a>
+                                <div class="collection-header">
+                                    <h6><b>Alternate Path 2</b></h6>
+                                </div>
+                                <a onclick="swapExercise('aext','2','Tucked Hanging Leg Raises', 'Gw3RyyARhBQ',this, '8-12')"
+                                    class="modal-close collection-item">Level 2: Tucked Hanging Leg Raises</a>
+                                <a onclick="swapExercise('aext','3','Negative Pike Hanging Leg Raises', '_Yds3pKxOLU',this, '8-12')"
+                                    class="modal-close collection-item">Level 3: Negative Pike Hanging Leg Raises</a>
+                                <a onclick="swapExercise('aext','4','Straight Hanging Leg Raises', 'QyVq5oUBpss',this, '8-12')"
+                                    class="modal-close collection-item">Level 4: Straight Hanging Leg Raises</a>
+                                <div class="collection-header">
+                                    <h6><b>Alternate Path 3</b></h6>
+                                </div>
+                                <a onclick="swapExercise('aext','2','Pike Compressions', 'yQXnOuQqKYc',this, '8-12')"
+                                    class="modal-close collection-item">Level 2: Pike Compressions</a>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a onclick="return false;" class="modal-close waves-effect btn-flat">Cancel</a>
+                        </div>
+                    </div>
+
+                    <!-- Anti-Rotation Modal -->
+                    <div id="arotSelect" class="modal">
+                        <div class="modal-content">
+                            <h4>Anti-Rotation Progression</h4>
+                            <br>
+                            <div class="collection with-header">
+                                <a onclick="swapExercise('arot','1','Banded Pallof Press', 'AH_QZLm_0-s',this, '8-12')"
+                                    class="modal-close collection-item active">Level 1: Banded Pallof Press</a>
+                                <div class="collection-header">
+                                    <h6><b>Alternate Path 1</b></h6>
+                                </div>
+                                <a onclick="swapExercise('arot','1','Assisted Knee Copenhagen Plank', '1NNqUQvMYGc?start=13',this, '8-12')"
+                                    class="modal-close collection-item">Level 1: Assisted Knee Copenhagen Plank</a>
+                                <a onclick="swapExercise('arot','2','Knee Copenhagen Plank', '1NNqUQvMYGc?start=11',this, '8-12')"
+                                    class="modal-close collection-item">Level 2: Knee Copenhagen Plank</a>
+                                <a onclick="swapExercise('arot','3','Assisted Copenhagen Plank', '1NNqUQvMYGc?start=7',this, '8-12')"
+                                    class="modal-close collection-item">Level 3: Assisted Copenhagen Plank</a>
+                                <a onclick="swapExercise('arot','4','Copenhagen Plank', '1NNqUQvMYGc?start=4',this, '8-12')"
+                                    class="modal-close collection-item">Level 4: Copenhagen Plank</a>
+                                <a onclick="swapExercise('arot','5','Copenhagen Plank with Movement', '1NNqUQvMYGc',this, '8-12')"
+                                    class="modal-close collection-item">Level 5: Copenhagen Plank with Movement</a>
+                                <div class="collection-header">
+                                    <h6><b>Alternate Path 1</b></h6>
+                                </div>
+                                <a onclick="swapExercise('arot','1','Ring Pallof Press', 'R6gOpib_75I',this, '8-12')"
+                                    class="modal-close collection-item">Level 2: Ring Pallof Press</a>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a onclick="return false;" class="modal-close waves-effect btn-flat">Cancel</a>
+                        </div>
+                    </div>
+
+                    <!-- Extension Modal -->
+                    <div id="extSelect" class="modal">
+                        <div class="modal-content">
+                            <h4>Extension Progression</h4>
+                            <br>
+                            <div class="collection with-header">
+                                <a onclick="swapExercise('ext','1','Reverse Hyperextension', 'ZeRsNzFcQLQ',this, '8-12')"
+                                    class="modal-close collection-item active">Level 1: Reverse Hyperextension</a>
+                                <div class="collection-header">
+                                    <h6><b>Alternate Path 1</b></h6>
+                                </div>
+                                <a onclick="swapExercise('ext','1','Arch Raises', 'OgyqYuh41Mw?start=220',this, '8-12')"
+                                    class="modal-close collection-item">Level 1: Arch Raises</a>
+                                <a onclick="swapExercise('ext','2','Arch Body Hold', 'OgyqYuh41Mw',this, '8-12')"
+                                    class="modal-close collection-item">Level 2: Arch Body Hold</a>
+                                <a onclick="swapExercise('ext','3','Arch Body Rocks', 'FazlcjNXMwA',this, '8-12')"
+                                    class="modal-close collection-item">Level 2: Arch Body Rocks</a>
+                                <div class="collection-header">
+                                    <h6><b>Alternate Path 1</b></h6>
+                                </div>
+                                <a onclick="swapExercise('ext','1','Hyper Extension', 'ph3pddpKzzw',this, '8-12')"
+                                    class="modal-close collection-item">Level 1: Hyper Extension</a>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a onclick="return false;" class="modal-close waves-effect btn-flat">Cancel</a>
+                        </div>
+                    </div>
+
+                    <!-- Core Triplet Table -->
+                    <table class="exercise">
+                        <thead>
+                            <tr>
+                                <th style="width:10%">Reps</th>
+                                <th>Exercise</th>
+                            </tr>
+                        </thead>
+                        <tr onclick="showVid(this)">
+                            <td>10-30s</td>
+                            <td class="aext">Plank</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315" class="aext"
+                                        src="https://www.youtube.com/embed/44ScXWFaVBs?start=10" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>60s</td>
+                            <td>Rest</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr onclick="showVid(this)">
+                            <td>8-12</td>
+                            <td class="arot">Banded Pallof Press</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315" class="arot"
+                                        src="https://www.youtube.com/embed/AH_QZLm_0-s" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>60s</td>
+                            <td>Rest</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr onclick="showVid(this)">
+                            <td>8-12</td>
+                            <td class="ext">Reverse Hyperextension</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315" class="ext"
+                                        src="https://www.youtube.com/embed/ZeRsNzFcQLQ" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>60s</td>
+                            <td>Rest</td>
+                        </tr>
+                    </table>
+                    <br><br>
+                </div>
+            </li>
+        </ul>
+
         <!-- END PAGE CONTENT -->
     </div>
 
-    
 
 
+
+
+    <!-- Scripts -->
     <script type="text/javascript" src="js/materialize.js"></script>
     <script>
         // Sidenav
         const sideNav = document.querySelector('.sidenav');
         M.Sidenav.init(sideNav, {});
+
+        // Dropdown
+        const dropdown = document.querySelectorAll('.dropdown-trigger');
+        M.Dropdown.init(dropdown, {});
+
+        // Collapsible
+        const collapsible = document.querySelectorAll('.collapsible.expandable');
+        M.Collapsible.init(collapsible, {
+            accordion: false
+        });
+
+        // Tooltip
+        const tooltip = document.querySelector('.tooltipped');
+        M.Tooltip.init(tooltip, {});
+
+        // Modal
+        const modal = document.querySelectorAll('.modal');
+        M.Modal.init(modal, {});
+
+        function showVid(elem) {
+            elem.nextElementSibling.classList.toggle('hide');
+        }
+
+        function swapExercise(exercise, num, name, vid, elem, reps = "8-10") {
+            var list = document.getElementsByClassName(exercise);
+            list[0].innerHTML = "Level " + num;
+            list[1].innerHTML = name;
+            list[1].previousElementSibling.innerHTML = reps;
+            list[2].src = "https://www.youtube.com/embed/" + vid;
+            elem.parentElement.getElementsByClassName('active')[0].classList.toggle('active');
+            elem.classList.toggle('active');
+        }
+
     </script>
 </body>
 
