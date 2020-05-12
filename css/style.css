@@ -1,3 +1,72 @@
 blockquote {
     border-left: 5px solid #212121;
 }
+
+table.exercise tr {
+    border-bottom: none;
+}
+
+table.exercise > tbody > tr > td {
+    border-radius: 0;
+}
+
+table.exercise > tbody > tr:nth-child(4n+1), tr:nth-child(4n+2) {
+    background-color: rgba(242, 242, 242, 0.5);
+}
+
+table.exercise > tbody > tr:nth-child(odd) {
+    cursor: pointer;
+}
+
+table.exercise > tbody > tr:hover {
+    background-color: rgba(200, 200, 200, 0.5);
+}
+
+table.exercise > tbody > tr {
+    -webkit-transition: background-color .25s ease;
+    transition: background-color .25s ease;
+}
+
+.collection {
+    border: none;
+}
+
+.collection .collection-item {
+    background-color: transparent;
+    border-bottom: none;
+}
+
+.collection .collection-item.active {
+    background-color: rgba(200, 200, 200, 0.5);
+    color: #212121;
+}
+
+.collection a.collection-item {
+    color: #212121;
+}
+
+.collection.with-header .collection-header {
+    background-color: transparent;
+    border-bottom: none;
+    padding: 10px 20px;
+}
+
+.collapsible {
+    border: none;
+}
+
+.collapsible-header {
+    border: none;
+    background-color: #212121;
+    color: white;
+}
+
+.collapsible-body {
+    display: none;
+    border-bottom: none;
+}
+
+.modal {
+    max-height: 85%;
+    width: 45%;
+}
