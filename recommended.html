@@ -165,7 +165,7 @@
                         <div class="modal-content">
                             <h4>Support Progression</h4>
                             <div class="collection">
-                                <a onclick="swapExercise('support','1','Parallel Bar Support', 'Zv87Teu51tQ',this), '30s'"
+                                <a onclick="swapExercise('support','1','Parallel Bar Support', 'Zv87Teu51tQ',this, '30s')"
                                     class="modal-close collection-item active">Level 1: Parallel Bar Support</a>
                                 <a onclick="swapExercise('support','2','Ring Support','V3IkFK5lvRw',this, '30s')"
                                     class="modal-close collection-item">Level 2: Ring Support</a>
@@ -474,9 +474,9 @@
                             <td></td>
                             <td></td>
                         </tr>
-                        <tr>
+                        <tr onclick="showVid(this)">
                             <td>5-8</td>
-                            <td>Assisted Bodyweight Squats</td>
+                            <td class="squat">Assisted Bodyweight Squats</td>
                         </tr>
                         <tr class="hide">
                             <td></td>
@@ -990,7 +990,7 @@
             elem.nextElementSibling.classList.toggle('hide');
         }
 
-        function swapExercise(exercise, num, name, vid, elem, reps = "8-10") {
+        function swapExercise(exercise, num, name, vid, elem, reps = "5-8") {
             var list = document.getElementsByClassName(exercise);
             list[0].innerHTML = "Level " + num;
             list[1].innerHTML = name;
