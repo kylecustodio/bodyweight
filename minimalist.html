@@ -7,7 +7,7 @@
     <title>Bodyweight</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
-
+    <link rel="stylesheet" href="css/style.css"/>
 </head>
 
 <body>
@@ -27,13 +27,7 @@
     </nav>
 
     <ul class="sidenav" id="mobile-demo">
-        <li>
-            <div class="user-view">
-                <div class="background">
-
-                </div>
-            </div>
-        </li>
+        <li><a href="index.html">Home</a></li>
         <li><a class="subheader">Routines</a></li>
         <li>
             <div class="divider"></div>
@@ -47,6 +41,93 @@
     <div class="container">
         <!-- PAGE CONTENT -->
         <h1 class="center">Minimalist Routine</h1>
+        <div class="center">A quick and simple routine for people who just want to move more and get the benefits of regular exercise.</div>
+        <br><br>
+
+        <ul class="collapsible expandable z-depth-0">
+            <li class="active">
+                <div class="collapsible-header">
+                    <div class="flow-text">The Routine</div>
+                </div>
+                <div class="collapsible-body">
+                    <div>
+                        <b>Instructions: </b>
+                        Complete 2-6 circuits of the following exercises. Take little to no rest. Each exercise should be done 1-2 reps short of failure.
+                    </div>
+                    <br><br>
+
+                    <div class="flow-text">Exercises</div>
+                    <table class="exercise">
+                        <thead>
+                            <tr>
+                                <th style="width:10%">Reps</th>
+                                <th>Exercise</th>
+                            </tr>
+                        </thead>
+                        <tr onclick="showVid(this)">
+                            <td>8</td>
+                            <td>Walking Lunges</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/L8fvypPrzzs"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr onclick="showVid(this)">
+                            <td>8</td>
+                            <td>Push-ups</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4dF1DOWzf20"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr onclick="showVid(this)">
+                            <td>8</td>
+                            <td>Horizontal Rows</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dvkIaarnf0g"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr onclick="showVid(this)">
+                            <td>8</td>
+                            <td>Plank Shoulder Taps</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/LEZq7QZ8ySQ"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </li>
+        </ul>
     </div>
     <!-- END PAGE CONTENT -->
     </div>
@@ -60,6 +141,16 @@
         // Sidenav
         const sideNav = document.querySelector('.sidenav');
         M.Sidenav.init(sideNav, {});
+
+        // Collapsible
+        const collapsible = document.querySelectorAll('.collapsible.expandable');
+        M.Collapsible.init(collapsible, {
+            accordion: false
+        });
+
+        function showVid(elem) {
+            elem.nextElementSibling.classList.toggle('hide');
+        }
     </script>
 </body>
 

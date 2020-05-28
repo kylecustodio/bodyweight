@@ -7,7 +7,7 @@
     <title>Bodyweight</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
-
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
@@ -27,13 +27,7 @@
     </nav>
 
     <ul class="sidenav" id="mobile-demo">
-        <li>
-            <div class="user-view">
-                <div class="background">
-
-                </div>
-            </div>
-        </li>
+        <li><a href="index.html">Home</a></li>
         <li><a class="subheader">Routines</a></li>
         <li>
             <div class="divider"></div>
@@ -47,10 +41,573 @@
     <div class="container">
         <!-- PAGE CONTENT -->
         <h1 class="center">Skill Day Routine</h1>
+        <div class="center">Reddit's beginner routine for practicing low-impact skills like the handstand and L-sit.
+        </div>
+        <br><br>
+        <ul class="collapsible expandable z-depth-0">
+            <li class="active">
+                <div class="collapsible-header">
+                    <div class="flow-text">Warm Up</div>
+                </div>
+                <div class="collapsible-body">
+                    <div>
+                        <b>Instructions: </b>
+                        A few exercises and stretches to prepare your joints for the Skill Work. Move from one exercise
+                        to
+                        the next with little rest in between.
+                    </div>
+                    <br><br>
+
+                    <div class="flow-text">Dynamic Stretches</div>
+                    <table class="exercise">
+                        <thead>
+                            <tr>
+                                <th style="width:10%">Reps</th>
+                                <th>Exercise</th>
+                            </tr>
+                        </thead>
+                        <tr onclick="showVid(this)">
+                            <td>10</td>
+                            <td>Trap-3 Raise</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/sh-tM_LmYhc?start=5" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr onclick="showVid(this)">
+                            <td>10</td>
+                            <td>External Rotation</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/qmYnoC0G9EQ?start=77" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr onclick="showVid(this)">
+                            <td>10</td>
+                            <td>Serratus Wall Slides</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/XwQEKFHYBHw"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr onclick="showVid(this)">
+                            <td>30s</td>
+                            <td>Deadbugs</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/I5xbsA71v1A?start=8" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr onclick="showVid(this)">
+                            <td>10+</td>
+                            <td>GMB Wrist Prep</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/mSZWSQSSEjE"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <br><br>
+                </div>
+                <br>
+            </li>
+            <li class="active">
+                <div class="collapsible-header">
+                    <div class="flow-text">Skill Work</div>
+                </div>
+                <div class="collapsible-body">
+                    <div>
+                        <b>Instructions: </b>
+                        Set a timer for 5-10 minutes and go practice your L-sits and handstand, resting as necessary.
+                        When time's up, move to the mobility work.
+                        Move on to the next progression once you can hold the position for 30s.
+                    </div>
+                    <br><br>
+
+                    <!-- Handstand Header + Button -->
+                    <div class="flow-text">Handstand Progression
+                        <a class="handstand waves-effect waves-light btn-small modal-trigger grey darken-4"
+                            href="#handstandSelect">Level 1</a></div>
+
+                    <!-- Handstand Modal -->
+                    <div id="handstandSelect" class="modal">
+                        <div class="modal-content">
+                            <h4>Handstand Progression</h4>
+                            <div class="collection">
+                                <a onclick="swapExercise('handstand','1','Wall Plank', '6jm4R3K4sJA',this, '5-10min')"
+                                    class="modal-close collection-item active">Level 1: Wall Plank</a>
+                                <a onclick="swapExercise('handstand','2','Wall Handstand','m64XxmNHjfs',this, '5-10min')"
+                                    class="modal-close collection-item">Level 2: Wall Handstand</a>
+                                <a onclick="swapExercise('handstand','3','Freestanding Handstand','N3K9SMNKL7Y',this, '5-10min')"
+                                    class="modal-close collection-item">Level 3: Freestanding Handstand</a>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a onclick="return false;" class="modal-close waves-effect btn-flat">Cancel</a>
+                        </div>
+                    </div>
+
+                    <!-- Handstand Table -->
+                    <table class="exercise">
+                        <thead>
+                            <tr>
+                                <th style="width:10%">Reps</th>
+                                <th>Exercise</th>
+                            </tr>
+                        </thead>
+                        <tr onclick="showVid(this)">
+                            <td>5-10min</td>
+                            <td class="handstand">Wall Plank</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe class="handstand" width="560" height="315"
+                                        src="https://www.youtube.com/embed/6jm4R3K4sJA" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <br><br>
+
+                    <!-- L-sit Header + Button -->
+                    <div class="flow-text">L-sit Progression
+                        <a class="lsit waves-effect waves-light btn-small modal-trigger grey darken-4"
+                            href="#lsitSelect">Level 1</a></div>
+
+                    <!-- L-sit Modal -->
+                    <div id="lsitSelect" class="modal">
+                        <div class="modal-content">
+                            <h4>L-sit Progression</h4>
+                            <div class="collection">
+                                <a onclick="swapExercise('lsit','1','Foot Supported L-sit', 'VpobvFPR6hQ?start=433',this, '2-3min')"
+                                    class="modal-close collection-item active">Level 1: Foot Supported L-sit</a>
+                                <a onclick="swapExercise('lsit','2','One-Leg Foot Supported L-sit','VpobvFPR6hQ?start=438',this, '2-3min')"
+                                    class="modal-close collection-item">Level 2: One-Leg Foot Supported L-sit</a>
+                                <a onclick="swapExercise('lsit','3','Elevated Tuck L-sit','VpobvFPR6hQ?start=445',this, '2-3min')"
+                                    class="modal-close collection-item">Level 3: Elevated Tuck L-sit</a>
+                                <a onclick="swapExercise('lsit','4','Tuck L-sit','VpobvFPR6hQ?start=456',this, '2-3min')"
+                                    class="modal-close collection-item">Level 4: Tuck L-sit</a>
+                                <a onclick="swapExercise('lsit','5','Advanced Tuck L-sit','IUZJoSP66HI?start=249',this, '2-3min')"
+                                    class="modal-close collection-item">Level 5: Advanced Tuck L-sit</a>
+                                <a onclick="swapExercise('lsit','6','L-sit','VpobvFPR6hQ?start=469',this, '2-3min')"
+                                    class="modal-close collection-item">Level 6: L-sit</a>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a onclick="return false;" class="modal-close waves-effect btn-flat">Cancel</a>
+                        </div>
+                    </div>
+
+                    <!-- L-sit Table -->
+                    <table class="exercise">
+                        <thead>
+                            <tr>
+                                <th style="width:10%">Reps</th>
+                                <th>Exercise</th>
+                            </tr>
+                        </thead>
+                        <tr onclick="showVid(this)">
+                            <td>2-3min</td>
+                            <td class="lsit">Foot Supported L-sit</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe class="lsit" width="560" height="315"
+                                        src="https://www.youtube.com/embed/VpobvFPR6hQ?start=433" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <br><br>
+                </div>
+                <br>
+            </li>
+            <li class="active">
+                <div class="collapsible-header">
+                    <div class="flow-text">Mobility Work</div>
+                </div>
+                <div class="collapsible-body">
+                    <div>
+                        <b>Instructions: </b>
+                        Pick one of the following sections and hold each stretch for as long as you feel necessary.
+                    </div>
+                    <br><br>
+
+                    <div class="flow-text">General Mobility</div>
+                    <table class="exercise">
+                        <thead>
+                            <tr>
+                                <th style="width:10%">Reps</th>
+                                <th>Exercise</th>
+                            </tr>
+                        </thead>
+                        <tr onclick="showVid(this)">
+                            <td>xx</td>
+                            <td>Yuri's Banded Shoulder Drills</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/zdwEWchSjrI" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr onclick="showVid(this)">
+                            <td>xx</td>
+                            <td>Banded Clam Shell</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/QjKyGqrAaP4" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr onclick="showVid(this)">
+                            <td>xx</td>
+                            <td>Hip Flexor Stretch</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/qHwyBHS6MQs" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr onclick="showVid(this)">
+                            <td>xx</td>
+                            <td>Hamstring Stretch of Choice</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/CrF2iMnn09w" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr onclick="showVid(this)">
+                            <td>xx</td>
+                            <td>Shoulder Extension Stretch</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/ihUAbG0e8zw" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr onclick="showVid(this)">
+                            <td>xx</td>
+                            <td>Shoulder Flexion Stretch</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/OhhaK3nDbbA" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <br><br>
+
+                    <div class="flow-text">Pancake Mobility</div>
+                    <table class="exercise">
+                        <thead>
+                            <tr>
+                                <th style="width:10%">Reps</th>
+                                <th>Exercise</th>
+                            </tr>
+                        </thead>
+                        <tr onclick="showVid(this)">
+                            <td>xx</td>
+                            <td>Butterfly Stretch</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/OrxjCE_tJ3k" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr onclick="showVid(this)">
+                            <td>xx</td>
+                            <td>Frog Stretch</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/_fLRf-S_0gk" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr onclick="showVid(this)">
+                            <td>xx</td>
+                            <td>Pancake Good Morning</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/c9EXWHuXAAw" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr onclick="showVid(this)">
+                            <td>xx</td>
+                            <td>Horse Stance</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/zvOPOuhtczg" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <br><br>
+
+                    <div class="flow-text">Overhead Mobility</div>
+                    <table class="exercise">
+                        <thead>
+                            <tr>
+                                <th style="width:10%">Reps</th>
+                                <th>Exercise</th>
+                            </tr>
+                        </thead>
+                        <tr onclick="showVid(this)">
+                            <td>xx</td>
+                            <td>Nick-E's Overhead Mobility Guide</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <a href="https://www.nick-e.com/overhead-mobility/">Overhead Mobility Guide</a>
+                                <p> You already did the Trap-3 Raise, External Rotations, and Serratus Wall Slides in the Warmup so you can skip them here</p>
+                            </td>
+                        </tr>
+                        <tr onclick="showVid(this)">
+                            <td>xx</td>
+                            <td>Thoracic Extensions</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/dHKc1wb6ieE" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr onclick="showVid(this)">
+                            <td>xx</td>
+                            <td>Overhead Lift-offs</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/KSYfX_NcfBc" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <br><br>
+
+                    <div class="flow-text">Front Splits</div>
+                    <table class="exercise">
+                        <thead>
+                            <tr>
+                                <th style="width:10%">Reps</th>
+                                <th>Exercise</th>
+                            </tr>
+                        </thead>
+                        <tr onclick="showVid(this)">
+                            <td>xx</td>
+                            <td>Calf Stretch</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/y01ri_43G50" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr onclick="showVid(this)">
+                            <td>xx</td>
+                            <td>Straddle Stance Good Morning</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/JadgYV2qnsQ" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr onclick="showVid(this)">
+                            <td>xx</td>
+                            <td>Lunge Stretch</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/qHwyBHS6MQs" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr onclick="showVid(this)">
+                            <td>xx</td>
+                            <td>Couch/Wall Stretch</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/l3ZanLgAxM4" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr onclick="showVid(this)">
+                            <td>xx</td>
+                            <td>Long Lunge Pulses</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/efKorH8yzn4" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr onclick="showVid(this)">
+                            <td>xx</td>
+                            <td>Front Split Holds</td>
+                        </tr>
+                        <tr class="hide">
+                            <td></td>
+                            <td>
+                                <div class="video-container">
+                                    <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/4tIQOR8TKKg" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <br><br>
+                </div>
+                <br>
+            </li>
+        </ul>
         <!-- END PAGE CONTENT -->
     </div>
 
-    
+
 
 
 
@@ -59,6 +616,30 @@
         // Sidenav
         const sideNav = document.querySelector('.sidenav');
         M.Sidenav.init(sideNav, {});
+
+        // Collapsible
+        const collapsible = document.querySelectorAll('.collapsible.expandable');
+        M.Collapsible.init(collapsible, {
+            accordion: false
+        });
+
+        // Modal
+        const modal = document.querySelectorAll('.modal');
+        M.Modal.init(modal, {});
+
+        function showVid(elem) {
+            elem.nextElementSibling.classList.toggle('hide');
+        }
+
+        function swapExercise(exercise, num, name, vid, elem, reps = "8-10") {
+            var list = document.getElementsByClassName(exercise);
+            list[0].innerHTML = "Level " + num;
+            list[1].innerHTML = name;
+            list[1].previousElementSibling.innerHTML = reps;
+            list[2].src = "https://www.youtube.com/embed/" + vid;
+            elem.parentElement.getElementsByClassName('active')[0].classList.toggle('active');
+            elem.classList.toggle('active');
+        }
     </script>
 </body>
 
