@@ -6,34 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bodyweight</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
 
     <!-- NAV BAR -->
-    <nav>
-        <div class="nav-wrapper grey darken-4">
-            <a href="index.html" class="brand-logo center">Bodyweight</a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <ul class="left hide-on-med-and-down">
-                <li><a href="recommended.html">Recommended</a></li>
-                <li><a href="move.html">Move</a></li>
-                <li><a href="minimalist.html">Minimalist</a></li>
-                <li><a href="skillday.html">Skill Day</a></li>
-            </ul>
+    <nav class="top-nav grey darken-4">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo center">Bodyweight</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="left hide-on-med-and-down">
+                    <li><a href="https://reddit.com/r/bodyweightfitness" class="left">r/bodyweightfitness</a></li>
+                    <li><a href="recommended.html">Recommended</a></li>
+                    <li><a href="move.html">Move</a></li>
+                    <li><a href="minimalist.html">Minimalist</a></li>
+                    <li><a href="skillday.html">Skill Day</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
     <ul class="sidenav" id="mobile-demo">
         <li><a href="index.html">Home</a></li>
+        <li><a href="https://reddit.com/r/bodyweightfitness">r/bodyweightfitness</a></li>
         <li><a class="subheader">Routines</a></li>
         <li>
             <div class="divider"></div>
         </li>
         <li><a href="recommended.html">Recommended</a></li>
-        <li><a href="move.html">Move</a></li>
         <li><a href="minimalist.html">Minimalist</a></li>
         <li><a href="skillday.html">Skill Day</a></li>
     </ul>
@@ -343,6 +346,7 @@
 
                     <!-- Pair 1: Pull-ups and Squats -->
                     <div class="flow-text">Pair 1:
+                        <br>
                         Pull-ups <a class="pull waves-effect waves-light btn-small modal-trigger grey darken-4"
                             href="#pullSelect">Level 1</a>
                         Squats <a class="squat waves-effect waves-light btn-small modal-trigger grey darken-4"
@@ -492,6 +496,7 @@
 
                     <!-- Pair 2: Dips and Hinge -->
                     <div class="flow-text">Pair 2:
+                        <br>
                         Dips <a class="dip waves-effect waves-light btn-small modal-trigger grey darken-4"
                             href="#dipSelect">Level 1</a>
                         Hinge <a class="hinge waves-effect waves-light btn-small modal-trigger grey darken-4"
@@ -622,6 +627,7 @@
 
                     <!-- Pair 3: Rows and Push-ups -->
                     <div class="flow-text">Pair 3:
+                        <br>
                         Rows <a class="rows waves-effect waves-light btn-small modal-trigger grey darken-4"
                             href="#rowSelect">Level 1</a>
                         Push-ups <a class="push waves-effect waves-light btn-small modal-trigger grey darken-4"
@@ -760,8 +766,10 @@
                     <div class="flow-text">Core Triplet 3: <br>
                         Anti-Extension <a class="aext waves-effect waves-light btn-small modal-trigger grey darken-4"
                             href="#aextSelect">Level 1</a>
+                            <br>
                         Anti-Rotation <a class="arot waves-effect waves-light btn-small modal-trigger grey darken-4"
                             href="#arotSelect">Level 1</a>
+                            <br>
                         Extension <a class="ext waves-effect waves-light btn-small modal-trigger grey darken-4"
                             href="#extSelect">Level 1</a>
                     </div>
@@ -956,7 +964,7 @@
 
 
     <!-- Scripts -->
-    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
     <script>
         // Sidenav
         const sideNav = document.querySelector('.sidenav');
